@@ -1,160 +1,203 @@
 const express = require('express');
 const cors = require('cors');
+const dotenv = require('dotenv');
 const fs = require('fs');
 const path = require('path');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
+
+// Load environment variables
+dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5000;
+
+// Initialize Gemini
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
-// Load personas data
+// Load personas data at startup
 let personas = [];
 try {
-  const personasData = fs.readFileSync(path.join(__dirname, 'personas.json'), 'utf8');
+  const personasPath = path.join(__dirname, 'personas.json');
+  const personasData = fs.readFileSync(personasPath, 'utf8');
   personas = JSON.parse(personasData);
-  console.log(`Loaded ${personas.length} doctor personas`);
+  console.log(`✅ Loaded ${personas.length} doctor personas`);
 } catch (error) {
-  console.error('Error loading personas:', error);
+  console.error('❌ Error loading personas.json:', error.message);
+  process.exit(1);
 }
 
-// Routes
-
-// Health check
-app.get('/api/health', (req, res) => {
-  res.json({ 
-    status: 'Backend is running!', 
-    timestamp: new Date().toISOString(),
-    personasLoaded: personas.length
+// Health check endpoint
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Doctor Personas API is running!',
+    endpoints: [
+      'GET /api/personas - Get all personas',
+      'GET /api/personas/:id - Get specific persona',
+      'POST /api/consult - Generate consultation preview'
+    ],
+    totalPersonas: personas.length
   });
 });
 
-// Get all personas
+// GET /api/personas - Return all personas
 app.get('/api/personas', (req, res) => {
-  const { cancer_type, region, style, limit } = req.query;
-  
-  let filteredPersonas = [...personas];
-  
-  // Filter by cancer type
-  if (cancer_type) {
-    filteredPersonas = filteredPersonas.filter(persona =>
-      persona.specialty.toLowerCase().includes(cancer_type.toLowerCase())
-    );
+  try {
+    res.json({
+      success: true,
+      count: personas.length,
+      data: personas
+    });
+  } catch (error) {
+    console.error('Error fetching personas:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch personas'
+    });
   }
-  
-  // Filter by region
-  if (region) {
-    filteredPersonas = filteredPersonas.filter(persona =>
-      persona.location.toLowerCase().includes(region.toLowerCase())
-    );
-  }
-  
-  // Filter by communication style
-  if (style) {
-    filteredPersonas = filteredPersonas.filter(persona =>
-      persona.style.tone.toLowerCase().includes(style.toLowerCase())
-    );
-  }
-  
-  // Limit results
-  if (limit) {
-    filteredPersonas = filteredPersonas.slice(0, parseInt(limit));
-  }
-  
-  res.json({
-    success: true,
-    count: filteredPersonas.length,
-    data: filteredPersonas
-  });
 });
 
-// Get persona by ID
+// GET /api/personas/:id - Return specific persona
 app.get('/api/personas/:id', (req, res) => {
-  const persona = personas.find(p => p.id === req.params.id);
-  
-  if (!persona) {
-    return res.status(404).json({
+  try {
+    const { id } = req.params;
+    const persona = personas.find(p => p.id === id);
+    
+    if (!persona) {
+      return res.status(404).json({
+        success: false,
+        error: `Persona with id "${id}" not found`
+      });
+    }
+
+    res.json({
+      success: true,
+      data: persona
+    });
+  } catch (error) {
+    console.error('Error fetching persona:', error);
+    res.status(500).json({
       success: false,
-      error: 'Persona not found'
+      error: 'Failed to fetch persona'
     });
   }
-  
-  res.json({
-    success: true,
-    data: persona
-  });
 });
 
-// Get personas by cancer type
-app.get('/api/cancer/:type', (req, res) => {
-  const cancerType = req.params.type.toLowerCase();
-  const matchingPersonas = personas.filter(persona =>
-    persona.specialty.toLowerCase().includes(cancerType)
-  );
-  
-  res.json({
-    success: true,
-    cancer_type: req.params.type,
-    count: matchingPersonas.length,
-    data: matchingPersonas
-  });
-});
+// POST /api/consult - Generate consultation preview
+app.post('/api/consult', async (req, res) => {
+  try {
+    const { personaId, patientSummary } = req.body;
 
-// Submit diagnosis and get matching personas
-app.post('/api/diagnoses', (req, res) => {
-  const { diagnosis_text, preferred_regions, preferred_styles } = req.body;
-  
-  if (!diagnosis_text) {
-    return res.status(400).json({
+    // Validation
+    if (!personaId || !patientSummary) {
+      return res.status(400).json({
+        success: false,
+        error: 'Both personaId and patientSummary are required'
+      });
+    }
+
+    // Find the persona
+    const persona = personas.find(p => p.id === personaId);
+    if (!persona) {
+      return res.status(404).json({
+        success: false,
+        error: `Persona with id "${personaId}" not found`
+      });
+    }
+
+    // Generate AI consultation using Gemini
+    const prompt = `You are ${persona.name}, an oncologist specializing in ${persona.specialty} at ${persona.hospital}, ${persona.location}.
+Style: ${persona.style.tone} — ${persona.style.communication}.
+Decision-making: ${persona.style.decision_making}.
+Focus areas: ${persona.focus.join(', ')}.
+Experience: ${persona.experience}.
+
+Patient case: ${patientSummary}
+
+Respond as this doctor would in a consultation, previewing how they would talk to the patient. Keep it conversational, empathetic, and true to their communication style. Do not provide a new diagnosis - focus on explaining the situation and potential next steps in this doctor's unique voice.
+
+Limit response to 200-300 words.`;
+
+    console.log(`🤖 Generating consultation for Dr. ${persona.name}...`);
+
+    // Get Gemini model
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+    
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+    const consultationResponse = response.text();
+
+    res.json({
+      success: true,
+      data: {
+        persona: {
+          id: persona.id,
+          name: persona.name,
+          specialty: persona.specialty,
+          location: persona.location,
+          style: persona.style
+        },
+        patientSummary,
+        consultation: consultationResponse,
+        generatedAt: new Date().toISOString()
+      }
+    });
+
+  } catch (error) {
+    console.error('Error generating consultation:', error);
+    
+    // Handle Gemini specific errors
+    if (error.message?.includes('API key')) {
+      return res.status(401).json({
+        success: false,
+        error: 'Invalid Gemini API key. Please check your GEMINI_API_KEY in .env file.'
+      });
+    }
+    
+    if (error.message?.includes('quota') || error.message?.includes('limit')) {
+      return res.status(402).json({
+        success: false,
+        error: 'Gemini API quota exceeded. Please try again later.'
+      });
+    }
+
+    res.status(500).json({
       success: false,
-      error: 'Diagnosis text is required'
+      error: 'Failed to generate consultation preview',
+      details: error.message
     });
   }
-  
-  // Simple cancer type detection
-  const cancerTypes = ['breast', 'lung', 'colorectal', 'leukemia', 'prostate'];
-  const detectedCancer = cancerTypes.find(type =>
-    diagnosis_text.toLowerCase().includes(type)
-  );
-  
-  let matchingPersonas = personas;
-  
-  // Filter by detected cancer type
-  if (detectedCancer) {
-    matchingPersonas = matchingPersonas.filter(persona =>
-      persona.specialty.toLowerCase().includes(detectedCancer)
-    );
-  }
-  
-  // Filter by preferred regions
-  if (preferred_regions && preferred_regions.length > 0) {
-    matchingPersonas = matchingPersonas.filter(persona =>
-      preferred_regions.some(region =>
-        persona.location.toLowerCase().includes(region.toLowerCase())
-      )
-    );
-  }
-  
-  // Filter by preferred styles
-  if (preferred_styles && preferred_styles.length > 0) {
-    matchingPersonas = matchingPersonas.filter(persona =>
-      preferred_styles.includes(persona.style.tone)
-    );
-  }
-  
-  res.json({
-    success: true,
-    detected_cancer_type: detectedCancer,
-    matching_personas: matchingPersonas.length,
-    data: matchingPersonas.slice(0, 6) // Limit to 6 for comparison
+});
+
+// Debug endpoint (remove before production)
+// app.get('/api/debug/models', ...)
+
+// Error handling middleware
+app.use((error, req, res, next) => {
+  console.error('Unhandled error:', error);
+  res.status(500).json({
+    success: false,
+    error: 'Internal server error'
   });
 });
 
+// 404 handler
+app.use('*', (req, res) => {
+  res.status(404).json({
+    success: false,
+    error: `Route ${req.method} ${req.originalUrl} not found`
+  });
+});
+
+// Start server
 app.listen(PORT, () => {
-  console.log(`🏥 Doctor Personas API running on port ${PORT}`);
-  console.log(`📊 Loaded ${personas.length} doctor personas`);
+  console.log(`🚀 Doctor Personas API running on port ${PORT}`);
+  console.log(`📋 Loaded ${personas.length} doctor personas`);
+  console.log(`🌍 Access at: http://localhost:${PORT}`);
+  console.log('📝 Make sure to set GEMINI_API_KEY in your .env file');
 });
 
 module.exports = app;
