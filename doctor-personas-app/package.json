@@ -1,0 +1,29 @@
+{
+  "name": "doctor-personas-app",
+  "version": "1.0.0",
+  "description": "AI Doctor Personas Consultation Platform with 3D Globe",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "backend-prod": "cd backend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "healthcare",
+    "ai",
+    "cancer",
+    "oncology",
+    "consultation",
+    "doctor",
+    "personas",
+    "3d-globe",
+    "react"
+  ],
+  "author": "HealthHacks Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
