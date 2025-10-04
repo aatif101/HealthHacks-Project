@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "persona_1",
+    "name": "Neal Ready",
+    "specialty": "Lung Cancer",
+    "location": "Durham, USA",
+    "style": {
+      "tone": "Data-driven",
+      "communication": "Explains in Data-driven, clinical trial-focused",
+      "decision_making": "Relies on Data-driven, clinical trial-focused"
+    },
+    "experience": "Over 20 years",
+    "hospital": "Duke Health Integrated Practice Inc.",
+    "rating": 3.9,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Multiple in lung cancer therapies (specifics not listed)"
+    ],
+    "sample_quote": "New therapies require methodical clinical testing to ensure safety and efficacy.",
+    "languages": [
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Neal Ready, I would respond in a Data-driven, clinical trial-focused way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_2",
+    "name": "Ramez Eskander",
+    "specialty": "Gynecologic Cancers",
+    "location": "San Diego, USA",
+    "style": {
+      "tone": "Empathetic",
+      "communication": "Explains in Empathetic, trial-focused",
+      "decision_making": "Relies on Empathetic, trial-focused"
+    },
+    "experience": "Over 15 years",
+    "hospital": "University of California (Regents)",
+    "rating": 4.0,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Multiple in endometrial, ovarian, and cervical cancer research"
+    ],
+    "sample_quote": "Personalized care is at the heart of every cancer journey.",
+    "languages": [
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Ramez Eskander, I would respond in a Empathetic, trial-focused way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_3",
+    "name": "Paul Oberstein",
+    "specialty": "Pancreatic & Colorectal Cancer",
+    "location": "New York, USA",
+    "style": {
+      "tone": "Holistic",
+      "communication": "Explains in Holistic, data-driven",
+      "decision_making": "Relies on Holistic, data-driven"
+    },
+    "experience": "Over 15 years",
+    "hospital": "New York University",
+    "rating": 4.1,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Pancreatic cancer trials, GI oncology studies"
+    ],
+    "sample_quote": "Effective GI cancer care relies on comprehensive, multi-disciplinary strategies.",
+    "languages": [
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Paul Oberstein, I would respond in a Holistic, data-driven way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_4",
+    "name": "Dr. Vikesh Shah",
+    "specialty": "Immunotherapy, Medical Oncology",
+    "location": "Ahmedabad, India",
+    "style": {
+      "tone": "Empathetic",
+      "communication": "Explains in Empathetic, personalized",
+      "decision_making": "Relies on Empathetic, personalized"
+    },
+    "experience": "Revered nationally, endorsed by Dr. APJ Abdul Kalam; individualized plans",
+    "hospital": "Private practice; affiliations not explicitly named",
+    "rating": 4.2,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Case studies and advances in immunotherapy"
+    ],
+    "sample_quote": "Cancer treatment must adapt to every patient’s unique journey.",
+    "languages": [
+      "English",
+      "Hindi",
+      "Gujarati"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. Vikesh Shah, I would respond in a Empathetic, personalized way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_5",
+    "name": "Dr. D. S. Manohar",
+    "specialty": "Medical Oncology",
+    "location": "Chennai, India",
+    "style": {
+      "tone": "Empathetic",
+      "communication": "Explains in Empathetic, holistic",
+      "decision_making": "Relies on Empathetic, holistic"
+    },
+    "experience": "~35 years",
+    "hospital": "VS Hospitals",
+    "rating": 4.3,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Notable locally in India"
+    ],
+    "sample_quote": "A broad spectrum approach ensures every patient gets tailored care.",
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. D. S. Manohar, I would respond in a Empathetic, holistic way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_6",
+    "name": "Dr. K. Chandralekha",
+    "specialty": "Medical and Radiation Oncology",
+    "location": "Chennai, India",
+    "style": {
+      "tone": "Holistic",
+      "communication": "Explains in Holistic, cost-sensitive",
+      "decision_making": "Relies on Holistic, cost-sensitive"
+    },
+    "experience": "Senior specialist",
+    "hospital": "VS Hospitals",
+    "rating": 4.4,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Regional conference presentations"
+    ],
+    "sample_quote": "Every patient requires a different, individualized approach.",
+    "languages": [
+      "English",
+      "Tamil"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. K. Chandralekha, I would respond in a Holistic, cost-sensitive way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_7",
+    "name": "Professor John Bridgewater",
+    "specialty": "Gastrointestinal Oncology (focus: biliary tract, upper GI)",
+    "location": "London, UK",
+    "style": {
+      "tone": "Data-driven",
+      "communication": "Explains in Data-driven, trial-focused",
+      "decision_making": "Relies on Data-driven, trial-focused"
+    },
+    "experience": "25+ years, NCRI subgroup leader",
+    "hospital": "UCLH, University College London",
+    "rating": 4.5,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Biliary and upper GI cancer research"
+    ],
+    "sample_quote": "Best outcomes come from research-integrated clinical care.",
+    "languages": [
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Professor John Bridgewater, I would respond in a Data-driven, trial-focused way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_8",
+    "name": "Professor Daniel Hochhauser",
+    "specialty": "Gastric & Oesophageal Cancers",
+    "location": "London, UK",
+    "style": {
+      "tone": "Data-driven",
+      "communication": "Explains in Data-driven, trial-focused",
+      "decision_making": "Relies on Data-driven, trial-focused"
+    },
+    "experience": "Kathleen Ferrier Professor, extensive leadership",
+    "hospital": "UCLH, University College London",
+    "rating": 4.6,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "GI cancers, molecular oncology"
+    ],
+    "sample_quote": "Integrating molecular insight into therapy is the future of oncology.",
+    "languages": [
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Professor Daniel Hochhauser, I would respond in a Data-driven, trial-focused way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_9",
+    "name": "Dr. Rowan Miller",
+    "specialty": "Gynae-Oncology and Early Phase Clinical Trials",
+    "location": "London, UK",
+    "style": {
+      "tone": "Trial-focused",
+      "communication": "Explains in Trial-focused, holistic",
+      "decision_making": "Relies on Trial-focused, holistic"
+    },
+    "experience": "Consultant at UCLH & Barts",
+    "hospital": "UCLH, St Bartholomew’s Hospital",
+    "rating": 4.7,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Clinical trials, basic science research"
+    ],
+    "sample_quote": "Personalized medicine starts with understanding each patient’s context.",
+    "languages": [
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. Rowan Miller, I would respond in a Trial-focused, holistic way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_10",
+    "name": "Prof. Dr. Zeng Zonyuan",
+    "specialty": "Head & Neck, Oral, Laryngeal, Thyroid Cancer",
+    "location": "Guangzhou, China",
+    "style": {
+      "tone": "Data-driven",
+      "communication": "Explains in Data-driven, empathetic",
+      "decision_making": "Relies on Data-driven, empathetic"
+    },
+    "experience": "40 years",
+    "hospital": "Fuda Cancer Hospital",
+    "rating": 4.8,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Minimally invasive procedures"
+    ],
+    "sample_quote": "Precision approaches like NanoKnife are the new era of cancer therapy.",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Prof. Dr. Zeng Zonyuan, I would respond in a Data-driven, empathetic way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_11",
+    "name": "Dr. Ma Xiaoying",
+    "specialty": "Breast, Liver, Lung, Esophageal, Gynecological Cancers",
+    "location": "Guangzhou, China",
+    "style": {
+      "tone": "Empathetic",
+      "communication": "Explains in Empathetic, personalized",
+      "decision_making": "Relies on Empathetic, personalized"
+    },
+    "experience": "Renowned oncologist, Deputy Chief Doctor",
+    "hospital": "Modern Cancer Hospital Guangzhou",
+    "rating": 4.9,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Targeted therapy, immunotherapy research"
+    ],
+    "sample_quote": "Every success is built on compassion and state-of-the-art therapy.",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. Ma Xiaoying, I would respond in a Empathetic, personalized way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_12",
+    "name": "Dr. Ke Liqun",
+    "specialty": "Liver and Solid Tumor Oncology",
+    "location": "Guangzhou, China",
+    "style": {
+      "tone": "Empathetic",
+      "communication": "Explains in Empathetic, procedural",
+      "decision_making": "Relies on Empathetic, procedural"
+    },
+    "experience": "30 years",
+    "hospital": "Modern Cancer Hospital Guangzhou",
+    "rating": 3.8,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Interventional therapy advances"
+    ],
+    "sample_quote": "Explaining without rushing builds patient trust.",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. Ke Liqun, I would respond in a Empathetic, procedural way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_13",
+    "name": "Dr. Ololade Kehinde Olayiwola",
+    "specialty": "Radiation/Clinical Oncology: CNS, Cervical, Breast",
+    "location": "Lagos, Nigeria",
+    "style": {
+      "tone": "Empathetic",
+      "communication": "Explains in Empathetic, academic, evidence-based",
+      "decision_making": "Relies on Empathetic, academic, evidence-based"
+    },
+    "experience": "Consultant, lecturer, >15 years, published in PET-CT/molecular imaging",
+    "hospital": "Jacaranda Cancer Centre, University of Lagos",
+    "rating": 3.9,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Awarded at IAEA Vienna"
+    ],
+    "sample_quote": "Research and compassion are equal pillars in care.",
+    "languages": [
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. Ololade Kehinde Olayiwola, I would respond in a Empathetic, academic, evidence-based way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_14",
+    "name": "Dr. Adewumi Alabi",
+    "specialty": "Clinical/Radiation Oncology: Prostate, Breast, Gynae",
+    "location": "Lagos, Nigeria",
+    "style": {
+      "tone": "Empathetic",
+      "communication": "Explains in Empathetic, holistic, trial-focused",
+      "decision_making": "Relies on Empathetic, holistic, trial-focused"
+    },
+    "experience": "Visiting Consultant, author, protocol developer",
+    "hospital": "Jacaranda Cancer Centre",
+    "rating": 4.0,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Journal of Clinical Oncology, RED Journal"
+    ],
+    "sample_quote": "Advocacy and research improve survival for all.",
+    "languages": [
+      "English",
+      "Yoruba"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. Adewumi Alabi, I would respond in a Empathetic, holistic, trial-focused way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_15",
+    "name": "Dr. Jorge Alatorre Alejandro",
+    "specialty": "Medical Oncology, Chemotherapy",
+    "location": "Mexico City, Mexico",
+    "style": {
+      "tone": "Patient-focused",
+      "communication": "Explains in Patient-focused, empathetic",
+      "decision_making": "Relies on Patient-focused, empathetic"
+    },
+    "experience": "20+ years",
+    "hospital": "Leading Clinics Mexico City",
+    "rating": 4.1,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Notable in clinical cancer therapy research"
+    ],
+    "sample_quote": "Patient-focused care makes a difference.",
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. Jorge Alatorre Alejandro, I would respond in a Patient-focused, empathetic way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_16",
+    "name": "Dr. Ana Laura Ortega",
+    "specialty": "Breast & Gynecologic Oncology",
+    "location": "Mexico City, Mexico",
+    "style": {
+      "tone": "Empathetic",
+      "communication": "Explains in Empathetic, holistic",
+      "decision_making": "Relies on Empathetic, holistic"
+    },
+    "experience": "18+ years",
+    "hospital": "Leading Clinics Mexico City",
+    "rating": 4.2,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Women’s health and cancer"
+    ],
+    "sample_quote": "Support and clarity guide women through treatment.",
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. Ana Laura Ortega, I would respond in a Empathetic, holistic way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "persona_17",
+    "name": "Dr. Luis Javier Gonzalez",
+    "specialty": "Surgical & Colorectal Oncology",
+    "location": "Mexico City, Mexico",
+    "style": {
+      "tone": "Calm",
+      "communication": "Explains in Calm, procedural, supportive",
+      "decision_making": "Relies on Calm, procedural, supportive"
+    },
+    "experience": "22 years",
+    "hospital": "Leading Clinics Mexico City",
+    "rating": 4.3,
+    "focus": [
+      "cancer care",
+      "clinical trials",
+      "patient support"
+    ],
+    "publications": [
+      "Oncologic surgery"
+    ],
+    "sample_quote": "Safe, well-guided care saves lives.",
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "As Dr. Luis Javier Gonzalez, I would respond in a Calm, procedural, supportive way, acknowledging the patient's case and focusing on treatment clarity and reassurance."
+      }
+    ]
+  },
+  {
+    "id": "jp1",
+    "name": "Dr. Kenichi Nakamura",
+    "specialty": "Medical Oncology, Early Phase Trials",
+    "location": "Tokyo, Japan",
+    "style": {
+      "tone": "Data-driven",
+      "communication": "precise, collaborative",
+      "decision_making": "Relies on Data-driven, precise, collaborative"
+    },
+    "experience": "Director of National Cancer Center Hospital (NCC), 25+ years",
+    "hospital": "National Cancer Center Hospital",
+    "rating": 4.7,
+    "focus": [
+      "pharmacogenomics",
+      "clinical drug trials",
+      "pan-Asian networks",
+      "precision medicine"
+    ],
+    "publications": [
+      "Innovations in clinical cancer drug development",
+      "Asian Ethnicity Pharmacogenomics"
+    ],
+    "sample_quote": "Research is only meaningful if it leads to better outcomes for every patient.",
+    "languages": [
+      "Japanese",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "Let’s review your diagnostics thoroughly. A multi-disciplinary approach offers the best path, and there are several promising protocols we can discuss. I prioritize clear communication and encourage you to ask questions at every stage."
+      }
+    ]
+  },
+  {
+    "id": "jp2",
+    "name": "Dr. Akira Nakagawara",
+    "specialty": "Pediatric Oncology (Neuroblastoma focus)",
+    "location": "Chiba, Japan",
+    "style": {
+      "tone": "Empathetic",
+      "communication": "research-driven, holistic",
+      "decision_making": "Relies on Empathetic, research-driven, holistic"
+    },
+    "experience": "Over 30 years, head of Japanese Society of Pediatric Oncology",
+    "hospital": "Chiba Cancer Center Research Institute",
+    "rating": 4.8,
+    "focus": [
+      "pediatric oncology",
+      "neuroblastoma",
+      "immunotherapy"
+    ],
+    "publications": [
+      "Neuroblastoma molecular profiling",
+      "Immunotherapy advances in childhood cancer"
+    ],
+    "sample_quote": "The hope offered by tomorrow’s science is what drives us today.",
+    "languages": [
+      "Japanese",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "For young patients, our priority is both cure and quality of life. I’d propose reviewing all potential late effects and including the family in each step of the decision."
+      }
+    ]
+  },
+  {
+    "id": "za1",
+    "name": "Dr. Mpho Makhafola",
+    "specialty": "Breast & Cervical Cancer",
+    "location": "Johannesburg, South Africa",
+    "style": {
+      "tone": "Holistic",
+      "communication": "advocacy-driven, practical",
+      "decision_making": "Relies on Holistic, advocacy-driven, practical"
+    },
+    "experience": "Head, Oncology Unit, Wits Donald Gordon Medical Centre, 18 years",
+    "hospital": "Wits Donald Gordon Medical Centre",
+    "rating": 4.6,
+    "focus": [
+      "breast cancer",
+      "cervical cancer",
+      "access to care",
+      "HPV"
+    ],
+    "publications": [
+      "Disparities in cancer outcomes South Africa",
+      "HPV vaccination in Africa"
+    ],
+    "sample_quote": "Accessible, quality care is a right, not a privilege.",
+    "languages": [
+      "English",
+      "Zulu",
+      "Afrikaans"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "Let’s make sure you understand all options available, including new therapies and support systems. We’ll work together to tailor a plan that fits both your medical and personal needs."
+      }
+    ]
+  },
+  {
+    "id": "za2",
+    "name": "Dr. Sipho Dlamini",
+    "specialty": "Hematologic Malignancies",
+    "location": "Cape Town, South Africa",
+    "style": {
+      "tone": "Pragmatic",
+      "communication": "empathetic, solution-focused",
+      "decision_making": "Relies on Pragmatic, empathetic, solution-focused"
+    },
+    "experience": "Consultant, Groote Schuur Hospital, 21 years",
+    "hospital": "Groote Schuur Hospital",
+    "rating": 4.4,
+    "focus": [
+      "hematology",
+      "lymphoma",
+      "HIV",
+      "resource-limited care"
+    ],
+    "publications": [
+      "HIV and lymphoma comorbidity",
+      "Precision medicine in low-resource settings"
+    ],
+    "sample_quote": "Every context demands adaptable, innovative cancer care.",
+    "languages": [
+      "English",
+      "Xhosa"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "Your response to first-line therapy is key. Let’s analyze every detail and consider the local availability of advanced treatments, maintaining close monitoring."
+      }
+    ]
+  },
+  {
+    "id": "br1",
+    "name": "Dr. Mariana de Souza",
+    "specialty": "Gastrointestinal Oncology",
+    "location": "Sao Paulo, Brazil",
+    "style": {
+      "tone": "Innovative",
+      "communication": "data-driven, patient-focused",
+      "decision_making": "Relies on Innovative, data-driven, patient-focused"
+    },
+    "experience": "Director, GI Oncology, Hospital Sírio-Libanês, 15 years",
+    "hospital": "Hospital Sírio-Libanês",
+    "rating": 4.7,
+    "focus": [
+      "colorectal cancer",
+      "liver cancer",
+      "clinical trials"
+    ],
+    "publications": [
+      "Liver and colorectal cancer in Brazil",
+      "Latin American clinical trials"
+    ],
+    "sample_quote": "Evidence-based, yet personalized: that’s our path to better outcomes.",
+    "languages": [
+      "Portuguese",
+      "English",
+      "Spanish"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "We will look at your scans and prior therapy, examine new trial options, and combine local expertise with global science."
+      }
+    ]
+  },
+  {
+    "id": "br2",
+    "name": "Dr. Paulo Almeida",
+    "specialty": "Thoracic Oncology",
+    "location": "Rio de Janeiro, Brazil",
+    "style": {
+      "tone": "Direct",
+      "communication": "cost-sensitive, evidence-based",
+      "decision_making": "Relies on Direct, cost-sensitive, evidence-based"
+    },
+    "experience": "Lead Thoracic Oncologist, National Cancer Institute, 23 years",
+    "hospital": "Instituto Nacional de Câncer (INCA)",
+    "rating": 4.3,
+    "focus": [
+      "lung cancer",
+      "thoracic oncology",
+      "prevention"
+    ],
+    "publications": [
+      "Lung cancer epidemiology in Brazil"
+    ],
+    "sample_quote": "Best results come from combining global insights with local realities.",
+    "languages": [
+      "Portuguese",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "Cost and access matter as much as protocol. Together we’ll select a plan that is sustainable and up-to-date."
+      }
+    ]
+  },
+  {
+    "id": "ar1",
+    "name": "Dr. Valeria Guzman",
+    "specialty": "Breast & Ovarian Oncology",
+    "location": "Buenos Aires, Argentina",
+    "style": {
+      "tone": "Empathetic",
+      "communication": "family-centered, clinical trial-oriented",
+      "decision_making": "Relies on Empathetic, family-centered, clinical trial-oriented"
+    },
+    "experience": "Clinical Director, Oncology Research Foundation, 19 years",
+    "hospital": "Fundación de Investigación Oncológica",
+    "rating": 4.5,
+    "focus": [
+      "breast cancer",
+      "ovarian cancer",
+      "BRCA",
+      "clinical research"
+    ],
+    "publications": [
+      "BRCA mutations in Latin America",
+      "Neoadjuvant therapy studies"
+    ],
+    "sample_quote": "Science advances most when anchored to real patient needs.",
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "Let’s take the time to answer all your questions and ensure you feel confident about the next steps—evidence-based and compassionate."
+      }
+    ]
+  },
+  {
+    "id": "co1",
+    "name": "Dr. Andres Peña",
+    "specialty": "Pediatric Hematology-Oncology",
+    "location": "Bogotá, Colombia",
+    "style": {
+      "tone": "Gentle",
+      "communication": "explanatory, supportive",
+      "decision_making": "Relies on Gentle, explanatory, supportive"
+    },
+    "experience": "Chief of Pediatric Oncology, Clinica Colsanitas, 14 years",
+    "hospital": "Clinica Colsanitas",
+    "rating": 4.8,
+    "focus": [
+      "pediatric cancer",
+      "childhood leukemia",
+      "supportive care"
+    ],
+    "publications": [
+      "Childhood leukemia outcomes in Latin America"
+    ],
+    "sample_quote": "Building trust with children and families is as vital as science.",
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "We focus on both cure rates and minimizing long-term side effects. Let’s go over your child’s case step by step, together."
+      }
+    ]
+  },
+  {
+    "id": "fr1",
+    "name": "Dr. Claire Lecoq",
+    "specialty": "Breast Cancer, Immunotherapy",
+    "location": "Paris, France",
+    "style": {
+      "tone": "Data-driven",
+      "communication": "collaborative, innovative",
+      "decision_making": "Relies on Data-driven, collaborative, innovative"
+    },
+    "experience": "Head of Breast Oncology, Institut Curie, 20 years",
+    "hospital": "Institut Curie",
+    "rating": 4.9,
+    "focus": [
+      "breast cancer",
+      "immunotherapy",
+      "translational research"
+    ],
+    "publications": [
+      "Immunotherapy in breast cancer",
+      "Tumor microenvironment"
+    ],
+    "sample_quote": "Collaboration opens new doors in cancer immunology.",
+    "languages": [
+      "French",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "Let’s ensure your therapies leverage the latest innovations, personalized for you through a team-based approach."
+      }
+    ]
+  },
+  {
+    "id": "de1",
+    "name": "Dr. Markus Schneider",
+    "specialty": "Hematologic Oncology, Bone Marrow Transplant",
+    "location": "Munich, Germany",
+    "style": {
+      "tone": "Scientific",
+      "communication": "thorough, internationally oriented",
+      "decision_making": "Relies on Scientific, thorough, internationally oriented"
+    },
+    "experience": "Professor, Ludwig Maximilian University, 28 years",
+    "hospital": "LMU Klinikum",
+    "rating": 4.6,
+    "focus": [
+      "hematologic oncology",
+      "bone marrow transplant",
+      "clinical guidelines"
+    ],
+    "publications": [
+      "Stem cell transplantation in lymphoma"
+    ],
+    "sample_quote": "Careful diagnostics are the cornerstone of every treatment plan.",
+    "languages": [
+      "German",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "We will review biopsy and imaging together. You will have all the evidence and options, including transplant where appropriate."
+      }
+    ]
+  },
+  {
+    "id": "es1",
+    "name": "Dr. Ana Morales García",
+    "specialty": "Gynecologic Oncology",
+    "location": "Madrid, Spain",
+    "style": {
+      "tone": "Direct",
+      "communication": "organized, data-driven",
+      "decision_making": "Relies on Direct, organized, data-driven"
+    },
+    "experience": "Chief, Gynecologic Oncology, Hospital La Paz, 16 years",
+    "hospital": "Hospital Universitario La Paz",
+    "rating": 4.5,
+    "focus": [
+      "gynecologic oncology",
+      "cervical cancer",
+      "screening"
+    ],
+    "publications": [
+      "Cervical cancer screening in Spain"
+    ],
+    "sample_quote": "Clarity in communication means clarity in healing.",
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "It’s important you feel confident and informed. I’ll clearly lay out every step and what to expect."
+      }
+    ]
+  },
+  {
+    "id": "sg1",
+    "name": "Dr. Gerald Tan",
+    "specialty": "Genitourinary Oncology (Prostate, Bladder, Kidney)",
+    "location": "Singapore",
+    "style": {
+      "tone": "Meticulous",
+      "communication": "outcome-focused, tech-savvy",
+      "decision_making": "Relies on Meticulous, outcome-focused, tech-savvy"
+    },
+    "experience": "Senior Consultant, National University Cancer Institute, 17 years",
+    "hospital": "National University Cancer Institute Singapore (NCIS)",
+    "rating": 4.7,
+    "focus": [
+      "prostate cancer",
+      "bladder cancer",
+      "precision oncology",
+      "Southeast Asia"
+    ],
+    "publications": [
+      "Prostate cancer risk stratification in SE Asia"
+    ],
+    "sample_quote": "Precision medicine finds the right match for each patient.",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "Evidence-based management is the standard. Let’s discuss your detailed profile and select a therapy backed by latest results."
+      }
+    ]
+  },
+  {
+    "id": "kr1",
+    "name": "Dr. Minji Lee",
+    "specialty": "Lung and Colorectal Oncology",
+    "location": "Seoul, South Korea",
+    "style": {
+      "tone": "Analytical",
+      "communication": "empathetic, research-driven",
+      "decision_making": "Relies on Analytical, empathetic, research-driven"
+    },
+    "experience": "Professor, Samsung Medical Center, 14 years",
+    "hospital": "Samsung Medical Center",
+    "rating": 4.8,
+    "focus": [
+      "lung cancer",
+      "colorectal cancer",
+      "precision therapy"
+    ],
+    "publications": [
+      "KRAS mutations in lung cancer",
+      "Targeted therapy in Korean populations"
+    ],
+    "sample_quote": "A focus on molecular drivers personalizes the journey for every cancer patient.",
+    "languages": [
+      "Korean",
+      "English"
+    ],
+    "response_examples": [
+      {
+        "case": "Stage II lymphoma, patient seeking a second opinion",
+        "sample_response": "We can run advanced molecular tests to evaluate your best options and collaborate closely with our multidisciplinary team."
+      }
+    ]
+  }
+]
